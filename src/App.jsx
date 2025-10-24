@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Tradicion from "./components/Tradicion";
@@ -9,6 +10,41 @@ import Footer from "./components/Footer";
 import ProductosPage from "./pages/ProductosPage";
 import NosotrosPage from "./pages/NosotrosPage";
 import ContactoPage from "./pages/ContactoPage";
+
+function AnimatedRoutes({ cart, addToCart }) {
+  const location = useLocation();
+
+  return (
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <Tradicion />
+              <ProductosDestacados cart={cart} addToCart={addToCart} />
+              <Artesanos />
+              <Footer />
+            </>
+          }
+        />
+        <Route path="/productos" element={<>
+          <ProductosPage addToCart={addToCart} />
+          <Footer />
+        </>} />
+        <Route path="/nosotros" element={<>
+          <NosotrosPage />
+          <Footer />
+        </>} />
+        <Route path="/contacto" element={<>
+          <ContactoPage />
+          <Footer />
+        </>} />
+      </Routes>
+    </AnimatePresence>
+  );
+}
 
 function App() {
   // Estado y persistencia del carrito
@@ -38,32 +74,7 @@ function App() {
   return (
     <Router>
       <Navbar cart={cart} setCart={setCart} />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Hero />
-              <Tradicion />
-              <ProductosDestacados cart={cart} addToCart={addToCart} />
-              <Artesanos />
-              <Footer />
-            </>
-          }
-        />
-        <Route path="/productos" element={<>
-          <ProductosPage addToCart={addToCart} />
-          <Footer />
-        </>} />
-        <Route path="/nosotros" element={<>
-          <NosotrosPage />
-          <Footer />
-        </>} />
-        <Route path="/contacto" element={<>
-          <ContactoPage />
-          <Footer />
-        </>} />
-      </Routes>
+      <AnimatedRoutes cart={cart} addToCart={addToCart} />
     </Router>
   );
 }
