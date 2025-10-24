@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { MapPin, Mail, Phone, Clock, MessageCircle, Instagram, Facebook, Twitter } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
 
@@ -300,17 +299,17 @@ export default function ContactoPage() {
       </section>
 
       {/* Call to Action Final */}
-      <section className="bg-gradient-to-r from-[#4B6F44] to-[#1A3D6D] py-16 px-6">
+      <section className="bg-gradient-to-r from-verdeMusgo to-azulProfundo py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-[Playfair_Display] font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-playfair font-bold text-white mb-4">
             ¿Listo para conocer nuestras artesanías?
           </h2>
-          <p className="text-xl text-[#F5F5DC] mb-8">
+          <p className="text-xl text-blancoHueso mb-8">
             Escríbenos ahora por WhatsApp y descubre la auténtica tradición boyacense
           </p>
           <button
             onClick={() => handleWhatsApp('general')}
-            className="inline-flex items-center gap-3 bg-[#25D366] text-white font-bold text-lg py-4 px-8 rounded-full hover:bg-[#128C7E] hover:scale-105 transition-all duration-300 shadow-2xl"
+            className="inline-flex items-center gap-3 bg-amarilloOcre text-white font-bold text-lg py-4 px-8 rounded-full hover:bg-terracota hover:scale-105 transition-all duration-300 shadow-2xl"
           >
             <FaWhatsapp className="text-3xl" />
             Contactar por WhatsApp
