@@ -1,0 +1,373 @@
+[
+    {
+        "id": 1,
+        "nombre": "Sombrero Vueltiao",
+        "origen": "Córdoba",
+        "descripcion": "Sombrero tradicional colombiano hecho a mano por artesanos Zenú.",
+        "precio": 120000,
+        "descuento": 20,
+        "img": [
+            "/public/7K4X76F2XVHAXK56M7E4YRQWOM.avif"
+        ],
+        "categoria": "Accesorios",
+        "destacado": true,
+        "activo": true
+    },
+    {
+        "id": 2,
+        "nombre": "Mochila Wayuu",
+        "origen": "La Guajira",
+        "descripcion": "Bolso tejido por la comunidad Wayuu, colores vibrantes y diseño único.",
+        "precio": 95000,
+        "descuento": 10,
+        "img": [
+            "/public/DB3LYJRTFREF5AN7Q2VEH3GU2Y.avif"
+        ],
+        "categoria": "Bolsos",
+        "destacado": true
+    },
+    {
+        "id": 3,
+        "nombre": "Ruana Boyacense",
+        "origen": "Nobsa, Boyacá",
+        "descripcion": "Prenda de abrigo típica de la región andina, hecha en lana natural.",
+        "precio": 180000,
+        "descuento": 15,
+        "img": [
+            "/public/OLUNSV6HEFBVXKRUHNUB53LA6I.avif",
+            "/public/OLUNSV6HEFBVXKRUHNUB53LA6I (1).avif"
+        ],
+        "categoria": "Ropa",
+        "destacado": true
+    },
+    {
+        "id": 4,
+        "nombre": "Hamaca Artesanal",
+        "origen": "San Jacinto, Bolívar",
+        "descripcion": "Hamaca tejida a mano en algodón 100% natural, perfecta para el descanso.",
+        "precio": 250000,
+        "descuento": 0,
+        "img": [
+            "/public/YS42GSX5RVAMFASWZHF4HNBPCQ.avif"
+        ],
+        "categoria": "Hogar"
+    },
+    {
+        "id": 5,
+        "nombre": "Poncho Guane",
+        "origen": "Santander",
+        "descripcion": "Poncho tradicional de la cultura Guane, elaborado con fibras naturales.",
+        "precio": 160000,
+        "descuento": 5,
+        "img": [
+            "/public/7K4X76F2XVHAXK56M7E4YRQWOM.avif"
+        ],
+        "categoria": "Ropa"
+    },
+    {
+        "id": 6,
+        "nombre": "Mochila Arhuaca",
+        "origen": "Sierra Nevada",
+        "descripcion": "Mochila tradicional de la comunidad Arhuaca, con símbolos ancestrales.",
+        "precio": 180000,
+        "descuento": 0,
+        "img": [
+            "/public/DB3LYJRTFREF5AN7Q2VEH3GU2Y.avif"
+        ],
+        "categoria": "Bolsos",
+        "destacado": true
+    },
+    {
+        "id": 7,
+        "nombre": "Cerámica Tairona",
+        "origen": "Santa Marta",
+        "descripcion": "Vasija decorativa inspirada en la cultura Tairona.",
+        "precio": 95000,
+        "descuento": 0,
+        "img": [
+            "/public/OLUNSV6HEFBVXKRUHNUB53LA6I.avif"
+        ],
+        "categoria": "Hogar"
+    },
+    {
+        "id": 8,
+        "nombre": "Chinchorro Wayuu",
+        "origen": "La Guajira",
+        "descripcion": "Hamaca tradicional Wayuu, tejida a mano con técnicas ancestrales.",
+        "precio": 320000,
+        "descuento": 10,
+        "img": [
+            "/public/YS42GSX5RVAMFASWZHF4HNBPCQ.avif"
+        ],
+        "categoria": "Hogar",
+        "destacado": true
+    },
+    {
+        "id": 9,
+        "nombre": "Collar Embera",
+        "origen": "Chocó",
+        "descripcion": "Collar artesanal de la comunidad Embera, con chaquiras de colores.",
+        "precio": 75000,
+        "descuento": 0,
+        "img": [
+            "/public/7K4X76F2XVHAXK56M7E4YRQWOM.avif"
+        ],
+        "categoria": "Accesorios"
+    },
+    {
+        "id": 10,
+        "nombre": "Canasto Werregue",
+        "origen": "Valle del Cauca",
+        "descripcion": "Canasto tejido en fibra de Werregue por artesanas del Pacífico.",
+        "precio": 140000,
+        "descuento": 15,
+        "img": [
+            "/public/DB3LYJRTFREF5AN7Q2VEH3GU2Y.avif"
+        ],
+        "categoria": "Hogar"
+    },
+    {
+        "id": 11,
+        "nombre": "Máscara del Carnaval",
+        "origen": "Barranquilla",
+        "descripcion": "Máscara decorativa del Carnaval de Barranquilla, hecha a mano.",
+        "precio": 85000,
+        "descuento": 0,
+        "img": [
+            "/public/OLUNSV6HEFBVXKRUHNUB53LA6I.avif"
+        ],
+        "categoria": "Arte"
+    },
+    {
+        "id": 12,
+        "nombre": "Manta Guajira",
+        "origen": "La Guajira",
+        "descripcion": "Manta tradicional Wayuu para mujer, diseño exclusivo.",
+        "precio": 220000,
+        "descuento": 5,
+        "img": [
+            "/public/YS42GSX5RVAMFASWZHF4HNBPCQ.avif"
+        ],
+        "categoria": "Ropa"
+    },
+    {
+        "id": 13,
+        "nombre": "Sombrero Aguadeño",
+        "origen": "Caldas",
+        "descripcion": "Sombrero tradicional de Aguadas, tejido en iraca.",
+        "precio": 140000,
+        "descuento": 0,
+        "img": [
+            "/public/7K4X76F2XVHAXK56M7E4YRQWOM.avif"
+        ],
+        "categoria": "Accesorios",
+        "destacado": true
+    },
+    {
+        "id": 14,
+        "nombre": "Butaco de Madera",
+        "origen": "Antioquia",
+        "descripcion": "Asiento tradicional tallado en madera maciza.",
+        "precio": 180000,
+        "descuento": 20,
+        "img": [
+            "/public/DB3LYJRTFREF5AN7Q2VEH3GU2Y.avif"
+        ],
+        "categoria": "Hogar"
+    },
+    {
+        "id": 15,
+        "nombre": "Mochila Kankuama",
+        "origen": "Cesar",
+        "descripcion": "Mochila tejida por la comunidad Kankuama en fique.",
+        "precio": 130000,
+        "descuento": 10,
+        "img": [
+            "/public/OLUNSV6HEFBVXKRUHNUB53LA6I.avif"
+        ],
+        "categoria": "Bolsos"
+    },
+    {
+        "id": 16,
+        "nombre": "Totuma Decorada",
+        "origen": "Córdoba",
+        "descripcion": "Totuma tallada y decorada a mano con motivos tradicionales.",
+        "precio": 65000,
+        "descuento": 0,
+        "img": [
+            "/public/YS42GSX5RVAMFASWZHF4HNBPCQ.avif"
+        ],
+        "categoria": "Hogar"
+    },
+    {
+        "id": 17,
+        "nombre": "Brazalete Zenú",
+        "origen": "Córdoba",
+        "descripcion": "Brazalete en caña flecha con diseños tradicionales Zenú.",
+        "precio": 45000,
+        "descuento": 0,
+        "img": [
+            "/public/7K4X76F2XVHAXK56M7E4YRQWOM.avif"
+        ],
+        "categoria": "Accesorios"
+    },
+    {
+        "id": 18,
+        "nombre": "Tapiz Wayuu",
+        "origen": "La Guajira",
+        "descripcion": "Tapiz decorativo con símbolos tradicionales Wayuu.",
+        "precio": 290000,
+        "descuento": 15,
+        "img": [
+            "/public/DB3LYJRTFREF5AN7Q2VEH3GU2Y.avif"
+        ],
+        "categoria": "Arte",
+        "destacado": true
+    },
+    {
+        "id": 19,
+        "nombre": "Poncho Pastouso",
+        "origen": "Nariño",
+        "descripcion": "Poncho tradicional de Pasto, tejido en lana virgen.",
+        "precio": 175000,
+        "descuento": 5,
+        "img": [
+            "/public/OLUNSV6HEFBVXKRUHNUB53LA6I.avif"
+        ],
+        "categoria": "Ropa"
+    },
+    {
+        "id": 20,
+        "nombre": "Cesto Artesanal",
+        "origen": "Boyacá",
+        "descripcion": "Cesto tejido en esparto, ideal para almacenamiento.",
+        "precio": 85000,
+        "descuento": 0,
+        "img": [
+            "/public/YS42GSX5RVAMFASWZHF4HNBPCQ.avif"
+        ],
+        "categoria": "Hogar"
+    },
+    {
+        "id": 21,
+        "nombre": "Fajón Guambiano",
+        "origen": "Cauca",
+        "descripcion": "Fajón tradicional de la comunidad Guambiana.",
+        "precio": 55000,
+        "descuento": 0,
+        "img": [
+            "/public/7K4X76F2XVHAXK56M7E4YRQWOM.avif"
+        ],
+        "categoria": "Accesorios"
+    },
+    {
+        "id": 22,
+        "nombre": "Bolso de Fique",
+        "origen": "Santander",
+        "descripcion": "Bolso elaborado en fique con diseños modernos.",
+        "precio": 110000,
+        "descuento": 10,
+        "img": [
+            "/public/DB3LYJRTFREF5AN7Q2VEH3GU2Y.avif"
+        ],
+        "categoria": "Bolsos"
+    },
+    {
+        "id": 23,
+        "nombre": "Manilla Putumayo",
+        "origen": "Putumayo",
+        "descripcion": "Manilla tejida con chaquiras y símbolos indígenas.",
+        "precio": 35000,
+        "descuento": 0,
+        "img": [
+            "/public/OLUNSV6HEFBVXKRUHNUB53LA6I.avif"
+        ],
+        "categoria": "Accesorios"
+    },
+    {
+        "id": 24,
+        "nombre": "Cuadro en Tamo",
+        "origen": "Pasto",
+        "descripcion": "Arte decorativo elaborado en tamo de trigo.",
+        "precio": 240000,
+        "descuento": 20,
+        "img": [
+            "/public/YS42GSX5RVAMFASWZHF4HNBPCQ.avif"
+        ],
+        "categoria": "Arte"
+    },
+    {
+        "id": 25,
+        "nombre": "Mochila Mini Wayuu",
+        "origen": "La Guajira",
+        "descripcion": "Mochila Wayuu tamaño pequeño, perfecta para el día a día.",
+        "precio": 75000,
+        "descuento": 0,
+        "img": [
+            "/public/7K4X76F2XVHAXK56M7E4YRQWOM.avif"
+        ],
+        "categoria": "Bolsos"
+    },
+    {
+        "id": 26,
+        "nombre": "Individuales de Mesa",
+        "origen": "Boyacá",
+        "descripcion": "Set de individuales tejidos en fique, diseños geométricos.",
+        "precio": 65000,
+        "descuento": 5,
+        "img": [
+            "/public/DB3LYJRTFREF5AN7Q2VEH3GU2Y.avif"
+        ],
+        "categoria": "Hogar"
+    },
+    {
+        "id": 27,
+        "nombre": "Collar Okama",
+        "origen": "Amazonas",
+        "descripcion": "Collar tradicional amazónico con semillas naturales.",
+        "precio": 85000,
+        "descuento": 0,
+        "img": [
+            "/public/OLUNSV6HEFBVXKRUHNUB53LA6I.avif"
+        ],
+        "categoria": "Accesorios",
+        "destacado": true
+    },
+    {
+        "id": 28,
+        "nombre": "Ruana Pastousa",
+        "origen": "Nariño",
+        "descripcion": "Ruana tradicional de Pasto, tejida en telar vertical.",
+        "precio": 195000,
+        "descuento": 15,
+        "img": [
+            "/public/YS42GSX5RVAMFASWZHF4HNBPCQ.avif"
+        ],
+        "categoria": "Ropa"
+    },
+    {
+        "id": 29,
+        "nombre": "Jarrón de Ráquira",
+        "origen": "Boyacá",
+        "descripcion": "Jarrón decorativo en cerámica de Ráquira.",
+        "precio": 120000,
+        "descuento": 0,
+        "img": [
+            "/public/7K4X76F2XVHAXK56M7E4YRQWOM.avif"
+        ],
+        "categoria": "Hogar"
+    },
+    {
+        "id": 30,
+        "nombre": "Banco Talla Manual",
+        "origen": "Putumayo",
+        "descripcion": "Banco pequeño tallado a mano con motivos indígenas.",
+        "precio": 160000,
+        "descuento": 10,
+        "img": [
+            "/public/DB3LYJRTFREF5AN7Q2VEH3GU2Y.avif"
+        ],
+        "categoria": "Hogar",
+        "destacado": true
+    }
+]
