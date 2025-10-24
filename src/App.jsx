@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Navbar from "./components/Navbar";
-import Hero from "./assets/Hero";
+import Hero from "./components/Hero";
 import Tradicion from "./components/Tradicion";
 import ProductosDestacados from "./components/ProductosDestacados";
 import Artesanos from "./components/Artesanos";
