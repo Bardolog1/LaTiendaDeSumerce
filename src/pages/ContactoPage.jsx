@@ -1,6 +1,7 @@
 import { MapPin, Mail, Phone, Clock, MessageCircle, Instagram, Facebook, Twitter } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
-
+// eslint-disable-next-line no-unused-vars
+import { motion } from 'framer-motion';
 export default function ContactoPage() {
   // Función para abrir WhatsApp con mensaje predefinido
   const handleWhatsApp = (tipo) => {

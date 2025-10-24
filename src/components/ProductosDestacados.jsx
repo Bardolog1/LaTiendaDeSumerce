@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { getFeaturedProducts } from '../utils/productUtils';
+// eslint-disable-next-line no-unused-vars
+import { motion } from 'framer-motion';
 import ProductCard from './ProductCard';
 import ProductModal from './ProductModal';
 import Slider from "react-slick";
