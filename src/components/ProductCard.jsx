@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import { X, ShoppingBag, MapPin, Tag, ChevronLeft, ChevronRight, Star } from "lucide-react";
 
 const ProductCard = ({ product, onClick, addToCart }) => {
@@ -20,34 +21,58 @@ const ProductCard = ({ product, onClick, addToCart }) => {
     })();
 
     return (
-        <div
-            className="group relative bg-white rounded-3xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+        <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4 }}
+            whileHover={{ y: -10, boxShadow: "0 20px 60px rgba(0,0,0,0.15)" }}
+            className="group relative bg-white rounded-3xl overflow-hidden cursor-pointer shadow-lg transition-all duration-500"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
             {/* Badge de descuento */}
             {product.discount > 0 && (
-                <div className="absolute top-4 right-4 z-10 bg-red-200 text-red-700 px-4 py-2 rounded-full font-bold text-sm shadow-lg transform rotate-3 animate-pulse">
+                <motion.div 
+                    initial={{ scale: 0, rotate: -180 }}
+                    animate={{ scale: 1, rotate: 3 }}
+                    transition={{ type: "spring", duration: 0.5 }}
+                    className="absolute top-4 right-4 z-10 bg-red-200 text-red-700 px-4 py-2 rounded-full font-bold text-sm shadow-lg"
+                >
                     -{product.discount * 100}%
-                </div>
+                </motion.div>
             )}
 
             {/* Imagen con efecto de zoom */}
             <div className="relative h-40 overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200" onClick={onClick}>
-                <img
+                <motion.img
                     src={imageSrc}
                     alt={product?.name || 'Producto'}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ duration: 0.7 }}
+                    className="w-full h-full object-cover"
                     onError={(e) => {
                         // if src fails to load, replace with placeholder
                         const svg = `<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400'><rect width='100%' height='100%' fill='%23e5e7eb'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%236b7280' font-family='Arial, Helvetica, sans-serif' font-size='24'>Sin imagen</text></svg>`;
                         e.currentTarget.src = `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
                     }}
                 />
-                <div className={`absolute inset-0 bg-gradient-to-t from-black/50 to-transparent transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`} />
+                <motion.div 
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: isHovered ? 1 : 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"
+                />
                 {/* Botón flotante que aparece al hover */}
-                <div className={`absolute bottom-4 left-1/2 transform -translate-x-1/2 transition-all duration-300 ${isHovered ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
-                    <button
+                <motion.div 
+                    initial={{ y: 20, opacity: 0 }}
+                    animate={{ y: isHovered ? 0 : 20, opacity: isHovered ? 1 : 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="absolute bottom-4 left-1/2 transform -translate-x-1/2"
+                >
+                    <motion.button
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
                         className="bg-white text-gray-800 px-4 py-2 rounded-full font-semibold shadow-xl hover:bg-gray-100 transition-colors flex items-center gap-2 text-sm"
                         onClick={(e) => {
                             e.stopPropagation();
@@ -56,18 +81,22 @@ const ProductCard = ({ product, onClick, addToCart }) => {
                     >
                         <ShoppingBag size={18} />
                         Agregar al carrito
-                    </button>
-                </div>
+                    </motion.button>
+                </motion.div>
             </div>
 
             {/* Contenido */}
             <div className="p-4">
                 <div className="mb-2">
-                    <h3 className="text-sm font-bold text-[#1A3D6D] group-hover:text-[#1A3D6D] transition-colors truncate">
+                    <motion.h3 
+                        whileHover={{ x: 5 }}
+                        transition={{ duration: 0.2 }}
+                        className="text-sm font-bold text-azulProfundo transition-colors truncate"
+                    >
                         {product.name}
-                    </h3>
+                    </motion.h3>
                     <div className="flex items-center gap-1 text-gray-600">
-                        <MapPin size={12} className="text-[#1A3D6D]" />
+                        <MapPin size={12} className="text-azulProfundo" />
                         <p className="text-xs truncate">{product.origin}</p>
                     </div>
                 </div>       {/* Precio */}
@@ -77,7 +106,7 @@ const ProductCard = ({ product, onClick, addToCart }) => {
                             ${product.price.toLocaleString()}
                         </span>
                     )}
-                    <span className="text-lg sm:text-xl font-bold text-[#1A3D6D] whitespace-nowrap">
+                    <span className="text-lg sm:text-xl font-bold text-azulProfundo whitespace-nowrap">
                         ${finalPrice.toLocaleString()}
                     </span>
                 </div>
@@ -85,8 +114,14 @@ const ProductCard = ({ product, onClick, addToCart }) => {
             </div>
 
             {/* Borde animado */}
-            <div className="absolute inset-0 border-2 border-transparent group-hover:border-[#1A3D6D] rounded-3xl transition-all duration-300 pointer-events-none" />
-        </div>
+            <motion.div 
+                animate={{ 
+                    borderColor: isHovered ? "#1A3D6D" : "transparent"
+                }}
+                transition={{ duration: 0.3 }}
+                className="absolute inset-0 border-2 rounded-3xl pointer-events-none"
+            />
+        </motion.div>
     );
 };
 export default ProductCard;
